@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Author>Haato</Author>
+    <Description>A custom UI plugin for HunterPie that brings the look and feel of the Dragon's Dogma monster widget into the overlay</Description>
+    <AssemblyVersion>1.0.0.2</AssemblyVersion>
+    <FileVersion>1.0.0.2</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HunterPie.Core" Version="2.15.0.159" />
+    <PackageReference Include="HunterPie.UI" Version="2.15.0.181" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="plugin.manifest.json">
+      <Generator></Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
