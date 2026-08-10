@@ -9,6 +9,7 @@
     <Description>A custom UI plugin for HunterPie that brings the look and feel of the Dragon's Dogma monster widget into the overlay</Description>
     <AssemblyVersion>1.0.0.2</AssemblyVersion>
     <FileVersion>1.0.0.2</FileVersion>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
   </PropertyGroup>
 
   <ItemGroup>
