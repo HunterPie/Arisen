@@ -1,0 +1,7 @@
+﻿{
+  "name": "arisen",
+  "author": "Haato",
+  "version": "1.0.0",
+  "description": "A custom UI plugin for HunterPie that brings the look and feel of the Dragon's Dogma monster widget into the overlay.",
+  "tags": ["overlay", "dragons-dogma"]
+}
