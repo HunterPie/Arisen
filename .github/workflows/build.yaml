@@ -23,6 +23,9 @@ jobs:
           dotnet-version: 10.0
           cache: true
 
+      - name: setup-nuget
+        run: dotnet nuget add source --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }} --name github "https://nuget.pkg.github.com/HunterPie/index.json"
+
       - name: restore
         run: dotnet restore --use-lock-file
       
