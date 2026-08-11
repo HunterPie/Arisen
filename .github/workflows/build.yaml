@@ -27,13 +27,13 @@ jobs:
         run: dotnet nuget add source --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }} --name github "https://nuget.pkg.github.com/HunterPie/index.json"
 
       - name: restore
-        run: dotnet restore --use-lock-file
+        run: dotnet restore Arisen.slnx --use-lock-file
       
       - name: lint
-        run: dotnet format --verify-no-changes --no-restore
+        run: dotnet format Arisen.slnx --verify-no-changes --no-restore
       
       - name: test
         run: dotnet test --no-restore
 
       - name: build
-        run: dotnet build --no-restore --no-logo -v q --property WarningLevel=0 /clp:ErrorsOnly
+        run: dotnet build Arisen.slnx --no-restore --no-logo -v q --property WarningLevel=0 /clp:ErrorsOnly
