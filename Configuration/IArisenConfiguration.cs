@@ -4,5 +4,5 @@ namespace Arisen.Configuration;
 
 internal interface IArisenConfiguration
 {
-	public ArisenMonsterWidgetConfiguration MonsterWidget { get; }
+    public ArisenMonsterWidgetConfiguration MonsterWidget { get; }
 }

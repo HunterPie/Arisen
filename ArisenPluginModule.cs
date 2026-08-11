@@ -9,14 +9,14 @@ namespace Arisen;
 
 public class ArisenPluginModule : IPluginModule
 {
-	public PluginConfiguration Configuration { get; } = new ArisenConfigurationV1();
+    public PluginConfiguration Configuration { get; } = new ArisenConfigurationV1();
 
-	public void Register(IScopedDependencyRegistry registry)
-	{
-		registry
-			.WithFactory<ArisenPlugin>()
-			.WithFactory<ArisenMonsterViewModel>()
-			.WithFactory<ArisenMonstersViewModel>()
-			.WithSingle<ArisenMonsterWidgetController>();
-	}
+    public void Register(IScopedDependencyRegistry registry)
+    {
+        registry
+            .WithFactory<ArisenPlugin>()
+            .WithFactory<ArisenMonsterViewModel>()
+            .WithFactory<ArisenMonstersViewModel>()
+            .WithSingle<ArisenMonsterWidgetController>();
+    }
 }

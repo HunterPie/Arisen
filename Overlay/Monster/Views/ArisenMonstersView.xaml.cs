@@ -5,8 +5,8 @@
 /// </summary>
 public partial class ArisenMonstersView
 {
-	public ArisenMonstersView()
-	{
-		InitializeComponent();
-	}
+    public ArisenMonstersView()
+    {
+        InitializeComponent();
+    }
 }
