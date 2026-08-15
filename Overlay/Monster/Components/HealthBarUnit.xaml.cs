@@ -8,14 +8,14 @@ namespace Arisen.Overlay.Monster.Components;
 /// </summary>
 public partial class HealthBarUnit : UserControl
 {
-	public bool IsFull { get => (bool)GetValue(IsFullProperty); set => SetValue(IsFullProperty, value); }
+    public bool IsFull { get => (bool)GetValue(IsFullProperty); set => SetValue(IsFullProperty, value); }
 
-	// Using a DependencyProperty as the backing store for IsFull.  This enables animation, styling, binding, etc...
-	public static readonly DependencyProperty IsFullProperty =
-		DependencyProperty.Register(nameof(IsFull), typeof(bool), typeof(HealthBarUnit), new PropertyMetadata(false));
+    // Using a DependencyProperty as the backing store for IsFull.  This enables animation, styling, binding, etc...
+    public static readonly DependencyProperty IsFullProperty =
+        DependencyProperty.Register(nameof(IsFull), typeof(bool), typeof(HealthBarUnit), new PropertyMetadata(false));
 
-	public HealthBarUnit()
-	{
-		InitializeComponent();
-	}
+    public HealthBarUnit()
+    {
+        InitializeComponent();
+    }
 }

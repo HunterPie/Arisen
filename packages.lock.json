@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "dependencies": {
+    "net10.0-windows7.0": {
+      "HunterPie.Core": {
+        "type": "Direct",
+        "requested": "[2.15.0.159, )",
+        "resolved": "2.15.0.159",
+        "contentHash": "EVxyQ0Y5st4b1CGZ1juZRRb5TOj3qrYNtorjruhaimN9JhhZxrI/04NUNmeU3NPIWYdopIa7JDaX0ht5J0bJhA==",
+        "dependencies": {
+          "HunterPie.DI": "1.3.0.115",
+          "Newtonsoft.Json": "13.0.1"
+        }
+      },
+      "HunterPie.UI": {
+        "type": "Direct",
+        "requested": "[2.15.0.181, )",
+        "resolved": "2.15.0.181",
+        "contentHash": "qCfb2qoL/e5LW/c0a8fMlYxetayJzcwB1yryOwfJnp/0WuQ4Z9DtVSGc+q/KpaUPKqIp7kA/G1o6KOj/rHlPwA==",
+        "dependencies": {
+          "HunterPie.Core": "2.15.0.159",
+          "HunterPie.DI": "1.3.0.115",
+          "HunterPie.Integrations": "2.15.0.158",
+          "LiveCharts.Wpf": "0.9.7",
+          "Microsoft.CodeAnalysis.CSharp": "5.3.0",
+          "Microsoft.CodeAnalysis.Common": "5.3.0"
+        }
+      },
+      "HunterPie.DI": {
+        "type": "Transitive",
+        "resolved": "1.3.0.115",
+        "contentHash": "IPKFv52XgZa8VYdezbHsSLJg4sR8BXBtxOJ7Rx/TqCFcIoVHsCgouW1xEMeM4yF1/xxXWIgrz5ArIeweRKcSWw=="
+      },
+      "HunterPie.Integrations": {
+        "type": "Transitive",
+        "resolved": "2.15.0.158",
+        "contentHash": "5uH2olj5ECWnMTcSpHGOq1rfp8rkFfOS5C24nqHddC/N0L3mkPfCttTyABys9gIhCIER5+gZBTCM0WkeSIjD5Q==",
+        "dependencies": {
+          "HunterPie.Core": "2.15.0.159"
+        }
+      },
+      "LiveCharts": {
+        "type": "Transitive",
+        "resolved": "0.9.7",
+        "contentHash": "p4xyBrUaNNfkWZSNsIle0r51cyVyFg0Yi0uBRZM5GQtdFiA/7guZHlffFyNUILIdux10Ch2hUaJpcZENVU9aaQ=="
+      },
+      "LiveCharts.Wpf": {
+        "type": "Transitive",
+        "resolved": "0.9.7",
+        "contentHash": "lv6YZoK0B4yWykMq5b9grZXtIbTj+OWu4sVN9GDpdgV6zffu64m4d5CW8KSjfSl9rB8VU649x1NZvhoU67hCDg==",
+        "dependencies": {
+          "LiveCharts": "0.9.7"
+        }
+      },
+      "Microsoft.CodeAnalysis.Analyzers": {
+        "type": "Transitive",
+        "resolved": "5.3.0-2.25625.1",
+        "contentHash": "4Yhh2fnu3G+J0J1lDc8WZVgMjgbynSeTfkl5IFJMFrmiIO0sc7Tjx+f3sFVV8Sd35PrIUWfof0RWc3lAMl7Azg=="
+      },
+      "Microsoft.CodeAnalysis.Common": {
+        "type": "Transitive",
+        "resolved": "5.3.0",
+        "contentHash": "uC0qk3jzTQY7i90ehfnCqaOZpBUGJyPMiHJ3c0jOb8yaPBjWzIhVdNxPbeVzI74DB0C+YgBKPLqUkgFZzua5Mg==",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Analyzers": "5.3.0-2.25625.1"
+        }
+      },
+      "Microsoft.CodeAnalysis.CSharp": {
+        "type": "Transitive",
+        "resolved": "5.3.0",
+        "contentHash": "SQFNGQF4f7UfDXKxMzzGNMr3fjrPDIjLfmRvvVgDCw+dyvEHDaRfHuKA5q0Pr0/JW0Gcw89TxrxrS/MjwBvluQ==",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Analyzers": "5.3.0-2.25625.1",
+          "Microsoft.CodeAnalysis.Common": "[5.3.0]"
+        }
+      },
+      "Newtonsoft.Json": {
+        "type": "Transitive",
+        "resolved": "13.0.1",
+        "contentHash": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A=="
+      }
+    }
+  }
+}

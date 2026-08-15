@@ -7,8 +7,8 @@ namespace Arisen.Overlay.Monster.Views;
 /// </summary>
 public partial class ArisenMonsterView : UserControl
 {
-	public ArisenMonsterView()
-	{
-		InitializeComponent();
-	}
+    public ArisenMonsterView()
+    {
+        InitializeComponent();
+    }
 }

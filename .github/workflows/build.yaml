@@ -1,0 +1,36 @@
+name: ci/build-check
+
+on:
+  pull_request:
+    branches: 
+      - main
+
+jobs:
+  build-check:
+    runs-on: windows-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: setup-dotnet
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 10.0
+          cache: true
+
+      - name: setup-nuget
+        run: dotnet nuget add source --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }} --name github "https://nuget.pkg.github.com/HunterPie/index.json"
+
+      - name: restore
+        run: dotnet restore Arisen.slnx --use-lock-file
+      
+      - name: lint
+        run: dotnet format Arisen.slnx --verify-no-changes --no-restore
+      
+      - name: test
+        run: dotnet test --no-restore
+
+      - name: build
+        run: dotnet build Arisen.slnx --no-restore --no-logo -v q --property WarningLevel=0 /clp:ErrorsOnly --output ./bin
