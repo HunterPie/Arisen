@@ -34,10 +34,3 @@ jobs:
 
       - name: build
         run: dotnet build Arisen.slnx --no-restore --no-logo -v q --property WarningLevel=0 /clp:ErrorsOnly --output ./bin
-      
-      - id: deploy-plugin
-        name: deploy-plugin
-        uses: HunterPie/deploy-plugin@v1.0.1
-        with:
-          entrypoint: Arisen
-          plugin-path: ./bin
