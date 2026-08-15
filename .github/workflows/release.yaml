@@ -1,8 +1,8 @@
-name: ci/build-check
+name: cd/release
 
 on:
-  pull_request:
-    branches: 
+  push:
+    branches:
       - main
 
 jobs:
@@ -25,12 +25,6 @@ jobs:
 
       - name: restore
         run: dotnet restore Arisen.slnx --use-lock-file
-      
-      - name: lint
-        run: dotnet format Arisen.slnx --verify-no-changes --no-restore
-      
-      - name: test
-        run: dotnet test --no-restore
 
       - name: build
         run: dotnet build Arisen.slnx --no-restore --no-logo -v q --property WarningLevel=0 /clp:ErrorsOnly --output ./bin
