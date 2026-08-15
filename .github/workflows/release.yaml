@@ -31,7 +31,7 @@ jobs:
       
       - id: deploy-plugin
         name: deploy-plugin
-        uses: HunterPie/deploy-plugin@v1
+        uses: HunterPie/deploy-plugin@v1.0.1
         with:
           entrypoint: Arisen
           plugin-path: ./bin
